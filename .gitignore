@@ -1,0 +1,17 @@
+# Python virtual environment and cache
+.venv/
+__pycache__/
+
+# Ignore CSV files except CSV files in the samples folder
+*.csv
+!samples/
+!samples/*.csv
+!samples/**/*.csv
+
+# Generated output folders
+logs/*
+!logs/.gitkeep
+raw_data/*
+!raw_data/.gitkeep
+analytics_outputs/*
+!analytics_outputs/.gitkeep
