@@ -9,7 +9,10 @@ from worldbankchallenge.utils.api_utils import (
     prompt_user_options,
     save_worldbank_csv,
 )
-from worldbankchallenge.utils.analytics_utils import create_missing_data_csv
+from worldbankchallenge.utils.analytics_utils import (
+    create_indicator_linecharts,
+    create_missing_data_csv,
+)
 
 
 if __name__ == "__main__":
@@ -23,5 +26,14 @@ if __name__ == "__main__":
             output_directory=PROJECT_ROOT / "analytics_outputs" / "missing_data",
         )
         print(f"Created missing-data report '{missing_csv_path.name}'.")
+        chart_paths = create_indicator_linecharts(
+            csv_path,
+            output_directory=(
+                PROJECT_ROOT
+                / "analytics_outputs"
+                / "indicators_yearly_evolution"
+            ),
+        )
+        print(f"Created {len(chart_paths)} indicator line chart(s).")
     else:
         print(f"The existing CSV '{csv_path.name}' was not recreated.")
