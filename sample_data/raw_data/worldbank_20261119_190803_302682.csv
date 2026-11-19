@@ -1,0 +1,13 @@
+country,country_code,year,indicator_id,indicator_name,value
+ABC,ABC,2023,NY.GDP.MKTP.CD,"GDP, current US dollars",
+ABC,ABC,2024,NY.GDP.MKTP.CD,"GDP, current US dollars",
+ABC,ABC,2023,NY.GDP.PCAP.CD,"GDP per capita, current US dollars",
+ABC,ABC,2024,NY.GDP.PCAP.CD,"GDP per capita, current US dollars",
+Brazil,BRA,2023,NY.GDP.MKTP.CD,GDP (current US$),2191131765684.63
+Brazil,BRA,2024,NY.GDP.MKTP.CD,GDP (current US$),2185821610689.31
+Brazil,BRA,2023,NY.GDP.PCAP.CD,GDP per capita (current US$),10377.5892792557
+Brazil,BRA,2024,NY.GDP.PCAP.CD,GDP per capita (current US$),10310.5486973693
+Canada,CAN,2023,NY.GDP.MKTP.CD,GDP (current US$),2196593836347.42
+Canada,CAN,2024,NY.GDP.MKTP.CD,GDP (current US$),2270076189683.46
+Canada,CAN,2023,NY.GDP.PCAP.CD,GDP per capita (current US$),54847.5370112652
+Canada,CAN,2024,NY.GDP.PCAP.CD,GDP per capita (current US$),55015.7066917734

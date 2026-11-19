@@ -1,0 +1,5 @@
+country,country_code,year,indicator_id,indicator_name
+ABC,ABC,2023,NY.GDP.MKTP.CD,"GDP, current US dollars"
+ABC,ABC,2024,NY.GDP.MKTP.CD,"GDP, current US dollars"
+ABC,ABC,2023,NY.GDP.PCAP.CD,"GDP per capita, current US dollars"
+ABC,ABC,2024,NY.GDP.PCAP.CD,"GDP per capita, current US dollars"

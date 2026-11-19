@@ -2,22 +2,21 @@
 .venv/
 __pycache__/
 
-# Ignore CSV files except CSV files in the samples folder
-*.csv
-!samples/
-!samples/*.csv
-!samples/**/*.csv
-
-# Ignore PNG files except PNG files in the samples folder
-*.png
-!samples/
-!samples/*.png
-!samples/**/*.png
-
 # Generated output folders
 logs/*
-!logs/.gitkeep
 raw_data/*
 !raw_data/.gitkeep
 analytics_outputs/*
 !analytics_outputs/.gitkeep
+
+# Ignore CSV files except CSV files in sample_data
+*.csv
+!sample_data/
+!sample_data/*.csv
+!sample_data/**/*.csv
+
+# Ignore PNG files except PNG files in sample_data
+*.png
+!sample_data/
+!sample_data/*.png
+!sample_data/**/*.png
