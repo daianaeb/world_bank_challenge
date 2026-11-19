@@ -8,6 +8,12 @@ __pycache__/
 !samples/*.csv
 !samples/**/*.csv
 
+# Ignore PNG files except PNG files in the samples folder
+*.png
+!samples/
+!samples/*.png
+!samples/**/*.png
+
 # Generated output folders
 logs/*
 !logs/.gitkeep
