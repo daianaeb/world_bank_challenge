@@ -20,7 +20,7 @@ if __name__ == "__main__":
         print(f"Created CSV '{csv_path.name}'.")
         missing_csv_path = create_missing_data_csv(
             csv_path,
-            output_directory=PROJECT_ROOT / "analytics_outputs",
+            output_directory=PROJECT_ROOT / "analytics_outputs" / "missing_data",
         )
         print(f"Created missing-data report '{missing_csv_path.name}'.")
     else:

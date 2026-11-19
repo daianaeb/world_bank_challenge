@@ -36,7 +36,7 @@ def create_missing_data_csv(source_csv, output_directory=None):
     directory = (
         Path(output_directory)
         if output_directory is not None
-        else PROJECT_ROOT / "analytics_outputs"
+        else PROJECT_ROOT / "analytics_outputs" / "missing_data"
     )
     directory.mkdir(parents=True, exist_ok=True)
     output_path = directory / f"missing_data_{match.group(1)}.csv"
