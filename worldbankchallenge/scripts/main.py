@@ -11,6 +11,7 @@ from worldbankchallenge.utils.api_utils import (
 )
 from worldbankchallenge.utils.analytics_utils import (
     create_indicator_linecharts,
+    create_indicator_scatterplots,
     create_missing_data_csv,
 )
 
@@ -35,5 +36,16 @@ if __name__ == "__main__":
             ),
         )
         print(f"Created {len(chart_paths)} indicator line chart(s).")
+        scatter_paths = create_indicator_scatterplots(
+            csv_path,
+            output_directory=(
+                PROJECT_ROOT
+                / "analytics_outputs"
+                / "indicators_last_year"
+            ),
+        )
+        print(
+            f"Created {len(scatter_paths)} indicator scatterplot(s)."
+        )
     else:
         print(f"The existing CSV '{csv_path.name}' was not recreated.")
